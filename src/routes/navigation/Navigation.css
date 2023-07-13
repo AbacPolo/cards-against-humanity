@@ -1,0 +1,71 @@
+.Navigation_Container {
+  box-sizing: border-box;
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.Navigation_Wrapper {
+  box-sizing: border-box;
+  background-color: #0f0f0f;
+  width: 100%;
+  aspect-ratio: 1/1.8;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.6);
+}
+
+.Nav_Title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  color: #fff;
+  margin: 0;
+  height: fit-content;
+}
+
+.Nav_Buttons_Container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Nav_Button {
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  background-color: #0f0f0f;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.Nav_Button h2 {
+  font-size: 1.5rem;
+}
+
+.Nav_Info p {
+  font-size: 1rem;
+}
