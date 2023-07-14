@@ -13,9 +13,9 @@ function Navigation() {
               <h2>Play</h2>
             </div>
           </Link>
-          <Link>
+          <Link to={"/decks"}>
             <div className="Nav_Button">
-              <h2>Choose decks</h2>
+              <h2>Decks</h2>
             </div>
           </Link>
         </div>

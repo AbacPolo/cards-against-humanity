@@ -11,14 +11,14 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
-  <React.StrictMode>
+  //<React.StrictMode>
     <BrowserRouter>
       {/*Change for HashRouter if deploying to GH-Pages*/}
       <Provider store={store}>
         <App />
       </Provider>
     </BrowserRouter>
-  </React.StrictMode>
+  //</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

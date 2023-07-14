@@ -16,9 +16,10 @@
   box-sizing: border-box;
   background-color: #0f0f0f;
   width: 100%;
+  max-height: 100%;
   aspect-ratio: 1/1.8;
   border: 3px solid #fff;
-  border-radius: 8px;
+  border-radius: 6px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 1.5rem;
@@ -28,7 +29,6 @@
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.6);
 }
 
 .Nav_Title {
@@ -51,11 +51,11 @@
   box-sizing: border-box;
   width: fit-content;
   height: fit-content;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 0.5rem;
   background-color: #0f0f0f;
   margin: 0 auto;
@@ -63,7 +63,8 @@
 }
 
 .Nav_Button h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .Nav_Info p {
