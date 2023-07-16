@@ -1,0 +1,14 @@
+.Board_Container {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url(/src/styles/topography.svg);
+  box-sizing: border-box;
+}
+
+.Board_Wrapper {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+}

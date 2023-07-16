@@ -1,28 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Decks.css";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addSelectedDeck,
   getAllDecks,
   getSelectedDecks,
-  importAllDecks,
-  loadAllDecks,
   removeAllDecks,
   removeSelectedDeck,
   selectAllDecks,
 } from "./decksSlice";
+import { Link } from "react-router-dom";
 
 function Decks() {
-  const loadedAllDecks = useSelector(loadAllDecks);
   const listAllDecks = useSelector(getAllDecks);
   const listSelectedDecks = useSelector(getSelectedDecks);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!loadedAllDecks) {
-      dispatch(importAllDecks());
-    }
-  }, [dispatch, loadedAllDecks]);
 
   const handleSelectDeck = ({ target }) => {
     const { checked, id } = target;
@@ -103,6 +95,11 @@ function Decks() {
             </label>
           </div>
         ))}
+        <Link to={"/"}>
+          <div className="backButton">
+            <i className="fa-solid fa-arrow-left"></i>
+          </div>
+        </Link>
       </div>
     </div>
   );
