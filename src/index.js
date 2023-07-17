@@ -8,6 +8,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Navigation from "./routes/navigation/Navigation";
 import Decks from "./routes/decks/Decks";
 import Board from "./routes/board/Board";
+import App from "./App";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -17,9 +18,11 @@ root.render(
   <HashRouter>
     <Provider store={store}>
       <Routes>
-        <Route exact path="/" element={<Navigation />} />
-        <Route exact path="/decks" element={<Decks />} />
-        <Route exact path="/board" element={<Board />} />
+        <Route exact path="/" element={<App/>}>
+          <Route exact path="/" element={<Navigation />} />
+          <Route exact path="/decks" element={<Decks />} />
+          <Route exact path="/board" element={<Board />} />
+        </Route>
       </Routes>
     </Provider>
   </HashRouter>
