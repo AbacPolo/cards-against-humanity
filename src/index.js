@@ -5,19 +5,26 @@ import { store } from "./app/store";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import Navigation from "./routes/navigation/Navigation";
+import Decks from "./routes/decks/Decks";
+import Board from "./routes/board/Board";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
   //<React.StrictMode>
-    <HashRouter>
-      {/*Change for HashRouter if deploying to GH-Pages*/}
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </HashRouter>
+  <HashRouter>
+    {/*Change for HashRouter if deploying to GH-Pages*/}
+    <Provider store={store}>
+      <Routes>
+        <Route exact path="/" element={<Navigation />} />
+        <Route exact path="/decks" element={<Decks />} />
+        <Route exact path="/board" element={<Board />} />
+      </Routes>
+    </Provider>
+  </HashRouter>
   //</React.StrictMode>
 );
 
