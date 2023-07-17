@@ -1,5 +1,6 @@
 {
   "name": "cards-against-humanity",
+  "homepage": "https://abacpolo.github.io/cards-against-humanity",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
