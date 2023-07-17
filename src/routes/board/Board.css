@@ -3,6 +3,8 @@
   width: 100%;
   background-color: #ffffff;
   background-image: url(/src/styles/topography.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   box-sizing: border-box;
 }
 
