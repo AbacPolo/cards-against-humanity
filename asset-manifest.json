@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/cards-against-humanity/static/css/main.161827bb.css",
-    "main.js": "/cards-against-humanity/static/js/main.66cb0790.js",
+    "main.js": "/cards-against-humanity/static/js/main.596ce048.js",
     "static/js/787.e6286336.chunk.js": "/cards-against-humanity/static/js/787.e6286336.chunk.js",
     "static/media/topography.svg": "/cards-against-humanity/static/media/topography.fee9c91f83f80994957a.svg",
     "index.html": "/cards-against-humanity/index.html",
     "main.161827bb.css.map": "/cards-against-humanity/static/css/main.161827bb.css.map",
-    "main.66cb0790.js.map": "/cards-against-humanity/static/js/main.66cb0790.js.map",
+    "main.596ce048.js.map": "/cards-against-humanity/static/js/main.596ce048.js.map",
     "787.e6286336.chunk.js.map": "/cards-against-humanity/static/js/787.e6286336.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.161827bb.css",
-    "static/js/main.66cb0790.js"
+    "static/js/main.596ce048.js"
   ]
 }
