@@ -1,7 +1,7 @@
 .BlackCard_Container {
-  height: 350px;
-  aspect-ratio: 1/1.4;
-  /* background-color: #0f0f0f; */
+  max-height: 350px;
+  width: 70%;
+  aspect-ratio: 1/1.38;
   background-color: #0f0f0f;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   border: 0px solid transparent;
@@ -19,7 +19,7 @@
 
 .BlackCard_Text {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.8rem;
+  line-height: 1.7rem;
 }

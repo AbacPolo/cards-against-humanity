@@ -8,7 +8,6 @@ export const boardSlice = createSlice({
     cardsAreLoaded: false,
     activeBlackCards: {},
     activeWhiteCards: [],
-    firstDrawDone: false,
     selectedWhiteCards: [],
     playedBlackCards: {},
     playedWhiteCards: {},
@@ -37,15 +36,15 @@ export const boardSlice = createSlice({
         state.whiteCards[Math.floor(Math.random() * state.whiteCards.length)],
       ];
     },
-    finishedFirstDraw: (state) => {
-      state.firstDrawDone = true;
-    },
     chooseWhiteCard: (state, action) => {
       state.selectedWhiteCards = [...state.selectedWhiteCards, action.payload];
       state.activeWhiteCards = state.activeWhiteCards.filter(
         (card) => card.text !== action.payload.text
       );
     },
+    nextTurn: (state) => {
+      state.selectedWhiteCards = [];
+    }
   },
 });
 
@@ -53,12 +52,16 @@ export const playCardsLoaded = (state) => state.board.cardsAreLoaded;
 export const getActiveBlackCards = (state) => state.board.activeBlackCards;
 export const getActiveWhiteCards = (state) => state.board.activeWhiteCards;
 export const getSelectedWhiteCards = (state) => state.board.selectedWhiteCards;
-export const getFirstDrawDone = (state) => state.board.firstDrawDone;
 export const {
   loadAllCards,
   drawBlackCard,
   drawWhiteCard,
   finishedFirstDraw,
   chooseWhiteCard,
+  nextTurn
 } = boardSlice.actions;
+
+export const allBlackCards = (state) => state.board.blackCards;
+export const allWhiteCards = (state) => state.board.whiteCards;
+
 export default boardSlice.reducer;
