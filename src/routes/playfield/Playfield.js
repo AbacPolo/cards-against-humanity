@@ -9,9 +9,9 @@ import {
   drawWhiteCard,
   getSelectedWhiteCards,
   nextTurn,
-} from "../../routes/board/boardSlice";
-import BlackCard from "../blackCard/BlackCard";
-import WhiteCard from "../whiteCard/WhiteCard";
+} from "../board/boardSlice";
+import BlackCard from "../../components/blackCard/BlackCard";
+import WhiteCard from "../../components/whiteCard/WhiteCard";
 
 function Playfield() {
   const dispatch = useDispatch();
