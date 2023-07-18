@@ -33,7 +33,6 @@ function Playfield() {
   }, [cardsLoaded, activeWhiteCards, dispatch]);
 
   const startNextTurn = () => {
-    dispatch(drawBlackCard());
     dispatch(nextTurn());
   };
 

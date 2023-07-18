@@ -9,8 +9,8 @@ export const boardSlice = createSlice({
     activeBlackCards: {},
     activeWhiteCards: [],
     selectedWhiteCards: [],
-    playedBlackCards: {},
-    playedWhiteCards: {},
+    playedBlackCards: [],
+    playedWhiteCards: [],
   },
   reducers: {
     loadAllCards: (state, action) => {
@@ -43,7 +43,10 @@ export const boardSlice = createSlice({
       );
     },
     nextTurn: (state) => {
+      state.playedBlackCards = [...state.playedBlackCards, state.activeBlackCards];
+      state.playedWhiteCards = [...state.playedWhiteCards, state.selectedWhiteCards];
       state.selectedWhiteCards = [];
+      boardSlice.caseReducers.drawBlackCard(state);
     },
     exitBoard: (state) => {
       state.blackCards= [];

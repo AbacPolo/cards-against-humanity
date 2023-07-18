@@ -12,7 +12,9 @@ function Header({ dropdownMenuOpen, setDropdownMenuOpen }) {
   };
 
   const handleDropdownMenu = () => {
-    dropdownMenuOpen ? setDropdownMenuOpen(false) : setDropdownMenuOpen(true);
+    if (!dropdownMenuOpen) {
+      setDropdownMenuOpen(true);
+    }
   };
 
   return (

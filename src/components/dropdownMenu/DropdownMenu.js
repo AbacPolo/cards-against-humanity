@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./DropdownMenu.css";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { drawBlackCard, getSelectedWhiteCards, nextTurn } from "../../routes/board/boardSlice";
+import { getSelectedWhiteCards, nextTurn } from "../../routes/board/boardSlice";
 
 function DropdownMenu({ dropdownMenuOpen, setDropdownMenuOpen }) {
   const dispatch = useDispatch();
@@ -15,7 +15,6 @@ function DropdownMenu({ dropdownMenuOpen, setDropdownMenuOpen }) {
 
   const returnToPlayfield = () => {
     if (selectedWhiteCards.length > 0) {
-      dispatch(drawBlackCard());
       dispatch(nextTurn());
     }
     setDropdownMenuOpen(false);
