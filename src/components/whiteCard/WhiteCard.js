@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./WhiteCard.css";
 import { useDispatch, useSelector } from "react-redux";
 import {
