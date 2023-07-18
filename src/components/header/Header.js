@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { exitBoard } from "../../routes/board/boardSlice";
 
-function Header() {
+function Header({ dropdownMenuOpen, setDropdownMenuOpen }) {
   const dispatch = useDispatch();
 
   const handleExitBoard = () => {
     dispatch(exitBoard());
+  };
+
+  const handleDropdownMenu = () => {
+    dropdownMenuOpen ? setDropdownMenuOpen(false) : setDropdownMenuOpen(true);
   };
 
   return (
@@ -16,7 +20,7 @@ function Header() {
       <Link to="/" className="GoToStart_Button" onClick={handleExitBoard}>
         <p>Cards Against Humanity.</p>
       </Link>
-      <div className="Menu_Button">
+      <div className="Menu_Button" onClick={handleDropdownMenu}>
         <i className="fa-solid fa-bars"></i>
       </div>
     </div>
