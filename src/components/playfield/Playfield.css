@@ -29,9 +29,9 @@
 .Selected_WhiteCards_Placement {
   width: 100%;
   height: fit-content;
-  position: absolute;
+  /* position: absolute;
   top: 280px;
-  right: 8px;
+  right: 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
