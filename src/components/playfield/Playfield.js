@@ -8,6 +8,7 @@ import {
   drawBlackCard,
   drawWhiteCard,
   getSelectedWhiteCards,
+  nextTurn,
 } from "../../routes/board/boardSlice";
 import BlackCard from "../blackCard/BlackCard";
 import WhiteCard from "../whiteCard/WhiteCard";
@@ -31,6 +32,11 @@ function Playfield() {
     }
   }, [cardsLoaded, activeWhiteCards, dispatch]);
 
+  const startNextTurn = () => {
+    dispatch(drawBlackCard());
+    dispatch(nextTurn());
+  };
+
   return (
     <div className="Playfield_Container">
       <div className="Playfield_Wrapper">
@@ -46,17 +52,23 @@ function Playfield() {
               ))
             : null}
         </div>
-        
       </div>
       {selectedWhiteCards.length < activeBlackCards.pick ? (
-          <div className="WhiteCards_Placement">
-            {activeWhiteCards.length > 0
-              ? activeWhiteCards.map((whiteCard, index) => (
-                  <WhiteCard whiteCard={whiteCard} key={index} />
-                ))
-              : null}
-          </div>
-        ) : null}
+        <div className="WhiteCards_Placement">
+          {activeWhiteCards.length > 0
+            ? activeWhiteCards.map((whiteCard, index) => (
+                <WhiteCard whiteCard={whiteCard} key={index} />
+              ))
+            : null}
+        </div>
+      ) : null}
+      {selectedWhiteCards.length === activeBlackCards.pick ? (
+        <div className="NextTurn_Button_Container">
+          <button className="NextTurn_Button" onClick={startNextTurn}>
+            <i className="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      ) : null}
     </div>
   );
 }
