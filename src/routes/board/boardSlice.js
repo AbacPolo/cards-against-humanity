@@ -44,7 +44,15 @@ export const boardSlice = createSlice({
     },
     nextTurn: (state) => {
       state.selectedWhiteCards = [];
-    }
+    },
+    exitBoard: (state) => {
+      state.blackCards= [];
+      state.whiteCards= [];
+      state.cardsAreLoaded= false;
+      state.activeBlackCards= {};
+      state.activeWhiteCards= [];
+      state.selectedWhiteCards= [];
+    },
   },
 });
 
@@ -58,7 +66,8 @@ export const {
   drawWhiteCard,
   finishedFirstDraw,
   chooseWhiteCard,
-  nextTurn
+  nextTurn,
+  exitBoard
 } = boardSlice.actions;
 
 export const allBlackCards = (state) => state.board.blackCards;
