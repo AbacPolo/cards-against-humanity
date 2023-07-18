@@ -12,7 +12,10 @@ export const decksSlice = createSlice({
   reducers: {
     importAllDecks: (state) => {
       state.allDecks = dataFormater(collectionAllDecks);
-      state.selectedDecks = dataFormater(collectionAllDecks);
+      state.selectedDecks = {
+        ...state.selectedDecks,
+        "CAH Base Set": state.allDecks["CAH Base Set"],
+      };
       state.loadedAllDecks = true;
     },
     addSelectedDeck: (state, action) => {
