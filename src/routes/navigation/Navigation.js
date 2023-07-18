@@ -19,7 +19,7 @@ function Navigation() {
       <div className="Navigation_Wrapper">
         <h1 className="Nav_Title">Cards Against Humanity.</h1>
         <div className="Nav_Buttons_Container">
-          <Link to={"/board"}>
+          <Link to={"/board/playfield"}>
             <div className="Nav_Button">
               <h2>Play</h2>
             </div>
