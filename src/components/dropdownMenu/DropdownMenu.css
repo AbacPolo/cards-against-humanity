@@ -1,0 +1,48 @@
+.DropdownMenu_Container {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  background-color: #fff;
+  border: 0px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px 1px rgb(15, 15, 15, 0.6);
+  box-sizing: border-box;
+}
+
+.DropdownMenu_Wrapper {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.DropdownMenu_Button {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  color: #0f0f0f;
+  font-weight: 700;
+}
+
+.DropdownMenu_Button h4 {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}

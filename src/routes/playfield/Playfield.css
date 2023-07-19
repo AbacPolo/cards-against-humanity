@@ -12,7 +12,7 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   position: relative;
 }
@@ -29,9 +29,9 @@
 .Selected_WhiteCards_Placement {
   width: 100%;
   height: fit-content;
-  position: absolute;
+  /* position: absolute;
   top: 280px;
-  right: 8px;
+  right: 0; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,4 +56,33 @@
     rgba(15, 15, 15, 0.5) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+.NextTurn_Button_Container {
+  width: 100%;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.NextTurn_Button {
+  height: 100%;
+  aspect-ratio: 1/1.38;
+  background-color: #0f0f0f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  box-shadow: 3px 3px 4px 1px rgb(15, 15, 15, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 8px;
 }

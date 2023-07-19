@@ -65,7 +65,6 @@ function Decks() {
               id="SelectAll"
               name="SelectAll"
               onChange={handleSelectAll}
-              defaultChecked
             />
             <label htmlFor="SelectAll">Select All</label>
           </div>
@@ -88,7 +87,7 @@ function Decks() {
               id={key}
               name={key}
               onChange={handleSelectDeck}
-              defaultChecked
+              checked={Object.keys(listSelectedDecks).includes(key) ? true : false}
             />
             <label className="Label" htmlFor={key}>
               {key}

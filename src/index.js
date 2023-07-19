@@ -9,6 +9,9 @@ import Navigation from "./routes/navigation/Navigation";
 import Decks from "./routes/decks/Decks";
 import Board from "./routes/board/Board";
 import App from "./App";
+import Playfield from "./routes/playfield/Playfield";
+import History from "./routes/history/History";
+import About from "./routes/about/About";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -18,10 +21,14 @@ root.render(
   <HashRouter>
     <Provider store={store}>
       <Routes>
-        <Route exact path="/" element={<App/>}>
+        <Route exact path="/" element={<App />}>
           <Route exact path="/" element={<Navigation />} />
           <Route exact path="/decks" element={<Decks />} />
-          <Route exact path="/board" element={<Board />} />
+          <Route exact path="/board" element={<Board />}>
+            <Route exact path="/board/playfield" element={<Playfield />} />
+            <Route exact path="/board/history" element={<History />} /> 
+            <Route exact path="/board/about" element={<About />} /> 
+          </Route>
         </Route>
       </Routes>
     </Provider>
