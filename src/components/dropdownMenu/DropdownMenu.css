@@ -36,6 +36,12 @@
   box-sizing: border-box;
   color: #0f0f0f;
   font-weight: 700;
+  border: 0 solid transparent;
+  border-radius: 5px;
+}
+
+.DropdownMenu_Button:hover {
+  background-color: #d6d6d6;
 }
 
 .DropdownMenu_Button h4 {

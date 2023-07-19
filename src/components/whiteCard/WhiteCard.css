@@ -12,8 +12,16 @@
   box-shadow: 3px 3px 6px 2px rgb(15, 15, 15, 0.6);
 }
 
+.WhiteCard_Container_Small:hover {
+  scale: 1.05;
+}
+
 .WhiteCard_Container_Big {
   padding: 1.5rem;
+}
+
+.WhiteCard_Container_Big:hover {
+  scale: none;
 }
 
 .WhiteCard_Wrapper {

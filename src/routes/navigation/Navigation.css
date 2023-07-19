@@ -105,6 +105,11 @@
   color: #fff;
 }
 
+.Nav_Button:hover {
+  background-color: #fff;
+  color: #0f0f0f;
+}
+
 .Nav_Button h2 {
   font-size: 2rem;
   font-weight: 700;

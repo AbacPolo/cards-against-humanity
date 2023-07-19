@@ -21,6 +21,13 @@
   line-height: 1rem;
   font-weight: 700;
   padding-left: 3px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+
+.GoToStart_Button:hover {
+  scale: 1.1;
+  padding-left: 8px;
 }
 
 .Menu_Button {
@@ -33,4 +40,15 @@
   box-sizing: border-box;
   font-size: 1.5rem;
   font-weight: 700;
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+
+.fa-bars {
+  height: fit-content;
+  width: fit-content;
+}
+
+.Menu_Button:hover {
+  scale: 1.2;
 }
