@@ -46,7 +46,7 @@ function DropdownMenu({ dropdownMenuOpen, setDropdownMenuOpen }) {
             <i className="fa-solid fa-clone"></i>Gameboard
           </h4>
         </Link>
-        <Link
+        {/* <Link
           to="/board/history"
           className="DropdownMenu_Button"
           onClick={closeDropdownMenu}
@@ -54,7 +54,7 @@ function DropdownMenu({ dropdownMenuOpen, setDropdownMenuOpen }) {
           <h4>
             <i className="fa-solid fa-clock-rotate-left"></i>History
           </h4>
-        </Link>
+        </Link> */}
         <Link
           to="/board/about"
           className="DropdownMenu_Button"
