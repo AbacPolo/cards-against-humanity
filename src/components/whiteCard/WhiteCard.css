@@ -13,8 +13,10 @@
   transition: all 0.3s;
 }
 
-.WhiteCard_Container_Small:hover {
-  scale: 1.05;
+@media only screen and (min-width: 1240px) {
+  .WhiteCard_Container_Small:hover {
+    scale: 1.05;
+  }
 }
 
 .WhiteCard_Container_Big {
