@@ -16,3 +16,27 @@
     padding-bottom: 1rem;
     position: relative;
   }
+
+  .About_Wrapper h3 {
+    color: #0f0f0f;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+  }
+
+  .About_Wrapper h4 {
+    color: #0f0f0f;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
+  .About_Wrapper p {
+    color: #0f0f0f;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+  }
+
+
