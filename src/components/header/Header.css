@@ -23,6 +23,7 @@
   padding-left: 3px;
   border: 0px solid transparent;
   border-radius: 4px;
+  transition: all 0.2s;
 }
 
 .GoToStart_Button:hover {
@@ -42,6 +43,7 @@
   font-weight: 700;
   border: 0px solid transparent;
   border-radius: 4px;
+  transition: all 0.2s;
 }
 
 .fa-bars {

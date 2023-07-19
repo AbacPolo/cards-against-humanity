@@ -59,7 +59,7 @@
   );
 }
 
-@media only screen and (min-width: 1540px) {
+@media only screen and (min-width: 1440px) {
   .WhiteCards_Placement {
     height: fit-content;
     justify-content: center;
@@ -94,6 +94,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   padding: 8px;
+  transition: all 0.2s;
 }
 
 .NextTurn_Button:hover {

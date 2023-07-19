@@ -103,6 +103,7 @@
   background-color: #0f0f0f;
   margin: 0;
   color: #fff;
+  transition: all 0.3s;
 }
 
 .Nav_Button:hover {

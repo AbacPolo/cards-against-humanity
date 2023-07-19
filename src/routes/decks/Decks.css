@@ -6,7 +6,7 @@
   box-sizing: border-box;
   overflow: hidden;
   background-color: #0f0f0f;
-  color: #fff
+  color: #fff;
 }
 
 .Decks_Wrapper {
@@ -15,7 +15,7 @@
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .Default_CheckBoxs {
@@ -65,10 +65,12 @@ input.SelectNone_Checkbox {
   border-radius: 1.5rem;
   box-sizing: border-box;
   background-color: #0f0f0f;
+  transition: all 0.3s;
 }
 
-.backButton:active {
-background-color: #444444;
+.backButton:hover {
+  background-color: #fff;
+  color: #0f0f0f;
 }
 
 .fa-arrow-left {
