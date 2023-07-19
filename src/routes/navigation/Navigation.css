@@ -10,12 +10,12 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
 }
 
 .Navigation_Wrapper {
   box-sizing: border-box;
   background-color: #0f0f0f;
-  width: 100%;
   max-height: 100%;
   aspect-ratio: 1/1.8;
   border: 3px solid #fff;
@@ -38,6 +38,42 @@
   color: #fff;
   margin: 0;
   height: fit-content;
+}
+
+@media only screen and (min-width: 401px) {
+  .Nav_Title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .Nav_Title {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .Nav_Title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+@media only screen and (min-width: 751px) {
+  .Nav_Title {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 1921px) {
+  .Nav_Title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
 }
 
 .Nav_Buttons_Container {
