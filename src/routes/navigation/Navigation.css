@@ -44,7 +44,14 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
   gap: 2rem;
+}
+
+.Nav_Button_Containet {
+  width: fit-content;
+  height: fit-content;
 }
 
 .Nav_Button {
@@ -58,7 +65,7 @@
   border: 1px solid #fff;
   border-radius: 0.5rem;
   background-color: #0f0f0f;
-  margin: 0 auto;
+  margin: 0;
   color: #fff;
 }
 
